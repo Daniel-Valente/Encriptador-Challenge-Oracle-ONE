@@ -1,7 +1,7 @@
 var btn_encriptar = document.querySelector("#encriptar");
 
 btn_encriptar.addEventListener("click", function() { 
-    var sentence = document.querySelector("#sentence").value;
+    var sentence = document.querySelector("#sentence");
     var final_sentence = "";
 
     if(sentence.length) {
@@ -30,5 +30,4 @@ btn_encriptar.addEventListener("click", function() {
         }
     }
     document.querySelector("#sentence").value = "";
-    console.log(final_sentence);
 });
