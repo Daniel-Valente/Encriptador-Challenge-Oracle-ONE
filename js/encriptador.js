@@ -1,7 +1,7 @@
 var btn_encriptar = document.querySelector("#encriptar");
 
 btn_encriptar.addEventListener("click", function() { 
-    var sentence = document.querySelector("#sentence");
+    var sentence = document.querySelector("#sentence").value;
     var final_sentence = "";
 
     if(sentence.length) {
