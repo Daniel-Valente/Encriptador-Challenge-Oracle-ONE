@@ -1,33 +1,35 @@
 var btn_encriptar = document.querySelector("#encriptar");
+var final_sentence = document.querySelector("#finalSentence");
 
 btn_encriptar.addEventListener("click", function() { 
     var sentence = document.querySelector("#sentence").value;
-    var final_sentence = "";
+    var modify_sentence = "";
 
     if(sentence.length) {
         for(var i = 0; i < sentence.length; i++) {
             var char = sentence.charAt(i);
             switch(char) {
                 case 'a':
-                    final_sentence += "ai";
+                    modify_sentence += "ai";
                     break;
                 case 'e':
-                    final_sentence += "enter";
+                    modify_sentence += "enter";
                     break;
                 case 'i':
-                    final_sentence += "imes";
+                    modify_sentence += "imes";
                     break;
                 case 'o':
-                    final_sentence += "ober";
+                    modify_sentence += "ober";
                     break;
                 case 'u':
-                    final_sentence += "ufat";
+                    modify_sentence += "ufat";
                     break;
                 default:
-                    final_sentence += char;
+                    modify_sentence += char;
                     break;
             }
         }
+        final_sentence.textContent = modify_sentence;
     }
     document.querySelector("#sentence").value = "";
 });
