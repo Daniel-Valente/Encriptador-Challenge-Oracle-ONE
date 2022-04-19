@@ -26,6 +26,7 @@ body, footer {
 
     color: #0A3871;
     border: none;
+    resize: none;
     outline: none;
     background: none;
 }
