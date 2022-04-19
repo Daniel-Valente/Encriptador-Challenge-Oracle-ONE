@@ -4,9 +4,10 @@ Este proyecto fue desarrollado para el primer Sprint del <b> Challenge Oracle ON
 Principiante en programación </b> por parte de ALURA.
 
 
-<h2> Tecnologias </h2>
-
-HTML
-CSS
-JavaScript
-Responsive Web Design
+<h2> Tecnologias usadas y caracteristicas </h2>
+<ul>
+  <il>HTML</il>
+  <il>CSS</il>
+  <il>JavaScript</il>
+  <il>Responsive Web Design</il>
+</ul>
