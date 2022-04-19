@@ -31,26 +31,33 @@
                 </div>
             </section>
             <section class="sidePanel">
-                <div id="messageBoardNotFound" class="invisible">
+                <div id="messageBoardNotFound">
                     <img src="img/muñeco.png" alt="" class="dollImage">
                     <div class="messageNotFoundPanel">
                         <div class="messageNotFound">Ningún mensaje fue encontrado</div>
                         <div class="textInput">Ingresa el texto que desees encriptar o desencriptar</div>
                     </div> 
                 </div>
-                <div id="messageBoard">
-                    <div class="viewText" id="finalSentence"></div>
-                    <button class="btnCopyText"> <div class="textCopyText">Copiar</div> </button>
+                <div id="messageBoard" class="invisible">
+                    <textarea id="finalSentence" class="viewText"></textarea>
+                    <button class="btnCopyText" id="copiar"> <div class="textCopyText">Copiar</div> </button>
                 </div>
             </section>
-            <section class="buttons invisible">
+            <section class="buttons">
                 <button class="btnEncriptar" id="encriptar">
                     <div class="txtEncriptar">Encriptar</div></button>
                 <button class="btnDesencriptar" id="desencriptar"><div class="txtDesencriptar">Desencripar</div></button>
             </section>
         </main>
 
+        <footer>
+            <section class="by">
+                <h3>Diseñado por: <b>Daniel Valente</b></h3>
+            </section>
+        </footer>
+
         <script src="js/encriptador.js"></script>
+        <script src="js/copyText.js"></script>
         <script src="js/desencriptador.js"></script>
     </body>
 </html>

@@ -1,6 +1,11 @@
 var btn_desencriptar = document.querySelector("#desencriptar");
 var final_sentence = document.querySelector("#finalSentence");
 
+var message_Board_Not_Found = document.querySelector("#messageBoardNotFound");
+var message_Board = document.querySelector("#messageBoard");
+
+var side_panel = document.querySelector(".sidePanel");
+
 btn_desencriptar.addEventListener("click", function() {
     var sentence = document.querySelector("#sentence").value;
     modify_sentence = sentence;
@@ -14,8 +19,13 @@ btn_desencriptar.addEventListener("click", function() {
     var o = "ober";
     var u = "ufat";
 
+    var arraySearch = [a, e, i, o, u];
+
     if(modify_sentence.length) {
-        var arraySearch = [a, e, i, o, u];
+        message_Board_Not_Found.classList.add("invisible");
+        message_Board.classList.remove("invisible");
+        
+        mediaQueries(side_panel, true);
 
         for(var k = 0; k < modify_sentence.length; k++) {
             
@@ -42,6 +52,34 @@ btn_desencriptar.addEventListener("click", function() {
                 }
             }
         }
-        final_sentence.textContent = modify_sentence;
+        final_sentence.value = modify_sentence;
     }   
+    else {
+        mediaQueries(side_panel, false);
+
+        message_Board_Not_Found.classList.remove("invisible");
+        message_Board.classList.add("invisible");
+    }
 });   
+
+function mediaQueries(side_panel, flat) {
+    if(flat) {
+        if ((window.matchMedia("(min-width: 481px)").matches) && (window.matchMedia("(max-width:992px)").matches)) {
+            side_panel.style.height = "343px";
+        }
+    
+        if(window.matchMedia("(max-width:480px)").matches) {
+            side_panel.style.height = "595px";
+        }
+    }
+    else {
+        if ((window.matchMedia("(min-width: 481px)").matches) && (window.matchMedia("(max-width:992px)").matches)) {
+            side_panel.style.height = "133px";
+        }
+    
+        if(window.matchMedia("(max-width:480px)").matches) {
+            side_panel.style.height = "186px";
+        }
+    }
+}
+

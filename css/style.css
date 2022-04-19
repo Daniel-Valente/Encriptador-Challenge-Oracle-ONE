@@ -2,7 +2,7 @@
     font-family: 'Inter', sans-serif;
 }
 
-body {
+body, footer {
     background-color: #f3f5fc;
 }
 
@@ -164,6 +164,10 @@ body {
     line-height: 150%;
 
     color: #495057;
+    
+    border: none;
+    resize: none;
+    outline: none;
 }
 
 .btnCopyText {
@@ -300,6 +304,16 @@ body {
     flex-grow: 1;
 }
 
+.by {
+    opacity: 0.5;
+
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 380px;
+    top: 605px;
+}
+
 @media screen and (max-width:480px) {
     .logo {
         height: 80px;
@@ -365,10 +379,6 @@ body {
         margin: 30px 25px;
     }
 
-    /*.sidePanel {
-        height: 595px;
-    } */
-
     .viewText {
         position: static;
         width: 279px;
@@ -411,6 +421,11 @@ body {
 
     .btnDesencriptar {
         margin: 24px;
+    }
+
+    .by {
+        left: 110px;
+        top: 725px;
     }
 }
 
@@ -475,10 +490,6 @@ body {
         height: 24px;
     }
 
-    /*.sidePanel {
-        height: 343px;
-    } */
-
     .viewText {
         position: static;
         width: 624px;
@@ -507,5 +518,10 @@ body {
     .buttons {
         left: 40px;
         top: 870px;
+    }
+
+    .by {    
+        left: 300px;
+        top: 960px;
     }
 }
