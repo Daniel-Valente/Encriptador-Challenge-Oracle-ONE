@@ -287,10 +287,6 @@ body, footer {
 
 .txtDesencriptar {
     position: static;
-    width: 280px;
-    height: 19px;
-    left: 24px;
-    top: 24px;
 
     font-style: normal;
     font-weight: bold;
@@ -524,5 +520,98 @@ body, footer {
     .by {    
         left: 300px;
         top: 960px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .logo {
+        height: 80px;
+    }
+
+    .textArea {
+        width: 900px;
+        height: 650px;
+
+    }
+
+    .warningPanel {
+        width: 458px;
+        top: 840px;
+    }
+
+    .warningImg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .warningText {
+        width: 410px;
+        font-size: 24px;
+    }
+
+    .sidePanel {
+        width: 800px;
+        height: 1005px;
+        left: 1100px;
+    }
+
+    .dollImage {
+        width: 672px;
+        height: 608px;
+    }
+
+    .messageNotFoundPanel {
+        width: 672px;
+        height: 244px;
+        top: 650px;
+        left: 60px;
+    }
+    
+    .messageNotFound {
+        width: 672px;
+        height: 116px;
+        font-size: 32px;
+    }
+
+    .viewText {
+        width: 672px;
+        height: 820px;
+        left: 60px;
+        top: 30px;
+        font-size: 34px;
+    }
+    
+    .btnCopyText {
+        width: 450px;
+        height: 100px;
+        left: 170px;
+        top: 880px;
+    }
+
+    .textInput {
+        width: 672px;
+        height: 96px;
+        font-size: 32px;
+    }
+    
+    .buttons {
+        width: 1360px;
+        height: 134px;
+        left: 80px;
+        top: 900px;
+    }
+
+    .btnEncriptar, .btnDesencriptar {
+        width: 450px;
+        height: 100px;
+    }
+
+    .txtEncriptar, .txtDesencriptar, .textCopyText { 
+        font-size: 32px;
+    }
+
+    .by { 
+        left: 490px;
+        top: 1020px;
     }
 }
